@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+body {
+	background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato';
+	margin: 0;
+}
+
+h1 {
+	letter-spacing: 3px;
+}
+
+#pokemonContainer {
+	background-color: '#fceaff';
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0;
+	max-width: 1200px;
+}
+
+.pokemon {
+	background-color: #eee;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+	animation: all 2s ease-in;
+}
+
+.pokemon .imgContainer {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.pokemon .imgContainer img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+
+.pokemon .info {
+	margin-top: 20px;
+}
+
+.pokemon .name {
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
+
+#next {
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 15%;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	margin: 20px;
+}
+
+.fire {
+	background-color: #FDDFDF;
+}
+
+.grass {
+	background-color: #DEFDE0;
+}
+
+.electric {
+	background-color: #FCF7DE;
+}
+
+.water {
+	background-color: #DEF3FD;
+}
+
+.ground {
+	background-color: #f4e7da;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #fceaff;
+}
+
+.poison {
+	background-color: #98d7a5;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #eaeda1;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #E6E0D4;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e,#38ef7d);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.hide{
+	display: none;
+}
+img{
+	cursor: pointer;
+}

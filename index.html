@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/png" href="./images/pikachu.png">
+</head>
+
+<body>
+	<h1>Pokedex</h1>
+	<div class="form__group field">
+		<input type="input" class="form__field" placeholder="Name" name="name" id='input-pokemon' />
+		<label for="input-pokemon" class="form__label">Search Pokemon</label>
+	</div>
+	<div id="pokemonContainer">
+		<div class="pokemon electric">
+			<div class="imgContainer">
+	  			<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pikachu" />
+			</div>
+			<div class="info">
+	  			<h3 class="name">Pikachu</h3>
+	  			<span class="type">Type: <span></span>Electric</span>
+				<div class="hide">
+					<p>Weight: 4</p>
+					<p>Height: 60</p>
+				</div>
+				
+			</div>
+   		</div>
+	</div>
+	<button id="next">Next</button>
+	<script src='script.js'></script>
+</body>
+
+</html>
